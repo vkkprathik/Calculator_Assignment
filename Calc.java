@@ -16,6 +16,10 @@ public class Calc {
         System.out.println("2. Subtraction");
         System.out.println("3. Multiplication");
         System.out.println("4. Division");
+        System.out.println("5. Square");
+        System.out.println("6. Cube");
+        System.out.println("7. Modulus");
+        System.out.println("8. Power");
 
         int choice = scanner.nextInt();
 
@@ -31,6 +35,20 @@ public class Calc {
                 break;
             case 4:
                 System.out.println("Result: " + divide(num1, num2));
+                break;
+            case 5:
+                System.out.println("Result: " + square(num1));
+                break;
+            case 6:
+                System.out.println("Result: " + cube(num1));
+                break;
+            case 7:
+                System.out.println("Result: " + modulus(num1, num2));
+                break;
+            case 8:
+                System.out.println("Enter the exponent for power operation:");
+                double exponent = scanner.nextDouble();
+                System.out.println("Result: " + power(num1, exponent));
                 break;
             default:
                 System.out.println("Invalid choice");
@@ -60,4 +78,19 @@ public class Calc {
         }
     }
 
+    public static double square(double num) {
+        return num * num;
+    }
+
+    public static double cube(double num) {
+        return num * num * num;
+    }
+
+    public static double modulus(double a, double b) {
+        return a % b;
+    }
+
+    public static double power(double base, double exponent) {
+        return Math.pow(base, exponent);
+    }
 }
