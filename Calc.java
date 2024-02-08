@@ -20,6 +20,8 @@ public class Calc {
         System.out.println("6. Cube");
         System.out.println("7. Modulus");
         System.out.println("8. Power");
+        System.out.println("9. test");
+
 
         int choice = scanner.nextInt();
 
