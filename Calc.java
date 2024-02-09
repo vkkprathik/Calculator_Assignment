@@ -6,10 +6,10 @@ public class Calc {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter first number:");
-        double num1 = scanner.nextDouble();
+        int num1 = scanner.nextInt();
 
         System.out.println("Enter second number:");
-        double num2 = scanner.nextDouble();
+        double num2 = scanner.nextInt();
 
         System.out.println("Select operation:");
         System.out.println("1. Addition");
@@ -20,7 +20,7 @@ public class Calc {
         System.out.println("6. Cube");
         System.out.println("7. Modulus");
         System.out.println("8. Power");
-        System.out.println("9. test");
+        
 
 
         int choice = scanner.nextInt();
@@ -76,7 +76,7 @@ public class Calc {
             return a / b;
         } else {
             System.out.println("Cannot divide by zero");
-            return Double.NaN; // Indicate an undefined result
+            return Double.NaN; 
         }
     }
 
